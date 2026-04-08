@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.env.*
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+pulse-job-mail/node_modules/
+pulse-job-mail/backend/node_modules/
+pulse-job-mail/frontend/node_modules/
+pulse-job-mail/dist/
+pulse-job-mail/.env
+.zencoder/
+.zenflow/

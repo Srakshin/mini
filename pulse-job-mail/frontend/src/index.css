@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 220 28% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 28% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 28% 12%;
+    --primary: 198 87% 48%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 205 38% 94%;
+    --secondary-foreground: 218 26% 22%;
+    --muted: 210 33% 96%;
+    --muted-foreground: 217 14% 42%;
+    --accent: 164 84% 92%;
+    --accent-foreground: 166 73% 18%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 31% 90%;
+    --input: 214 31% 90%;
+    --ring: 198 87% 48%;
+    --success: 151 55% 42%;
+    --warning: 38 92% 50%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 218 44% 8%;
+    --foreground: 210 40% 96%;
+    --card: 221 38% 12%;
+    --card-foreground: 210 40% 96%;
+    --popover: 221 38% 12%;
+    --popover-foreground: 210 40% 96%;
+    --primary: 198 88% 55%;
+    --primary-foreground: 218 44% 8%;
+    --secondary: 222 24% 18%;
+    --secondary-foreground: 210 40% 96%;
+    --muted: 222 24% 15%;
+    --muted-foreground: 217 16% 72%;
+    --accent: 166 55% 16%;
+    --accent-foreground: 164 77% 82%;
+    --destructive: 0 63% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 217 21% 22%;
+    --input: 217 21% 22%;
+    --ring: 198 88% 55%;
+    --success: 151 55% 42%;
+    --warning: 38 92% 50%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Segoe UI", "Inter", sans-serif;
+    background-image:
+      radial-gradient(circle at top left, rgba(29, 155, 240, 0.16), transparent 28%),
+      radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 24%),
+      linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  }
+}
+
+@layer utilities {
+  .font-calendas {
+    font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
